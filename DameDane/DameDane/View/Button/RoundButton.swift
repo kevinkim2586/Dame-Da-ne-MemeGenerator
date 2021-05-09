@@ -13,7 +13,7 @@ struct RoundButton<TextToShow:View>: View {
     var body: some View {
         ZStack{
             RoundedRectangle(cornerRadius: 30).foregroundColor(Color("lightBlue"))
-            textToShow.foregroundColor(.white).cuteFont(style: .largeTitle, weight: .regular)
+            textToShow.foregroundColor(.white).BinggraeFont(style: .body, weight: .regular)
         }
     }
 }

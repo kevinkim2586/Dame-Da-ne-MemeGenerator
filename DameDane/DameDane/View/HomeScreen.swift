@@ -13,7 +13,7 @@ struct HomeScreen: View {
         NavigationView{
             GeometryReader{geometry in
             VStack(alignment:.center){
-                Text("다메다네 밈 만들기!").cuteFont(style: .largeTitle, weight: .regular)
+                Text("다메다네 밈 만들기!").BinggraeFont(style: .title1, weight: .bold)
                 Spacer()
                 
                 //이미지 선택 화면으로 이동하는 NavigationLink

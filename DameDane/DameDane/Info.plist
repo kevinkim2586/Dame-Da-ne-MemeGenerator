@@ -7,6 +7,8 @@
 	<key>UIAppFonts</key>
 	<array>
 		<string>CuteFont-Regular.ttf</string>
+		<string>Binggrae-Bold.ttf</string>
+		<string>Binggrae.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

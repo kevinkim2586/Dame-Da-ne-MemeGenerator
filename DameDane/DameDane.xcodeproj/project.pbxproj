@@ -18,6 +18,8 @@
 		93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4026476C2E00313A3B /* DescriptionScreen.swift */; };
 		93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4226477C3500313A3B /* ImagePickScreen.swift */; };
 		93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4826477DDB00313A3B /* RoundButton.swift */; };
+		93A23F4C264786F900313A3B /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F4A264786F900313A3B /* Binggrae-Bold.ttf */; };
+		93A23F4D264786F900313A3B /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F4B264786F900313A3B /* Binggrae.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		93A23F4026476C2E00313A3B /* DescriptionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionScreen.swift; sourceTree = "<group>"; };
 		93A23F4226477C3500313A3B /* ImagePickScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickScreen.swift; sourceTree = "<group>"; };
 		93A23F4826477DDB00313A3B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		93A23F4A264786F900313A3B /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Binggrae-Bold.ttf"; path = "../../../../Downloads/Binggrae-Bold.ttf"; sourceTree = "<group>"; };
+		93A23F4B264786F900313A3B /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Binggrae.ttf; path = ../../../../Downloads/Binggrae.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		93A23F392647652D00313A3B /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				93A23F4A264786F900313A3B /* Binggrae-Bold.ttf */,
+				93A23F4B264786F900313A3B /* Binggrae.ttf */,
 				93A23F3A2647656000313A3B /* CuteFont-Regular.ttf */,
 			);
 			path = Font;
@@ -180,7 +186,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A23F3226475ED700313A3B /* LaunchScreen.storyboard in Resources */,
+				93A23F4D264786F900313A3B /* Binggrae.ttf in Resources */,
 				93A23F2F26475ED700313A3B /* Preview Assets.xcassets in Resources */,
+				93A23F4C264786F900313A3B /* Binggrae-Bold.ttf in Resources */,
 				93A23F2C26475ED700313A3B /* Assets.xcassets in Resources */,
 				93A23F3B2647656000313A3B /* CuteFont-Regular.ttf in Resources */,
 			);
