@@ -72,6 +72,8 @@
 		93A23F2426475ED600313A3B /* DameDane */ = {
 			isa = PBXGroup;
 			children = (
+				93A23F4F2647898200313A3B /* Model */,
+				93A23F4E2647897A00313A3B /* ViewModel */,
 				93A23F3F26476C0600313A3B /* View */,
 				93A23F2526475ED600313A3B /* AppDelegate.swift */,
 				93A23F2726475ED600313A3B /* SceneDelegate.swift */,
@@ -126,6 +128,20 @@
 				93A23F4826477DDB00313A3B /* RoundButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		93A23F4E2647897A00313A3B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		93A23F4F2647898200313A3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
