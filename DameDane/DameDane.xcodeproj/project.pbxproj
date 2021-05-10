@@ -7,22 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93997A7526496507002A1E86 /* CuteFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A7426496507002A1E86 /* CuteFont-Regular.ttf */; };
+		93997A782649651B002A1E86 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A762649651B002A1E86 /* Binggrae.ttf */; };
+		93997A792649651B002A1E86 /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A772649651B002A1E86 /* Binggrae-Bold.ttf */; };
 		93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F2526475ED600313A3B /* AppDelegate.swift */; };
 		93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F2726475ED600313A3B /* SceneDelegate.swift */; };
 		93A23F2A26475ED600313A3B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F2926475ED600313A3B /* HomeScreen.swift */; };
 		93A23F2C26475ED700313A3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F2B26475ED700313A3B /* Assets.xcassets */; };
 		93A23F2F26475ED700313A3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F2E26475ED700313A3B /* Preview Assets.xcassets */; };
 		93A23F3226475ED700313A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F3026475ED700313A3B /* LaunchScreen.storyboard */; };
-		93A23F3B2647656000313A3B /* CuteFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F3A2647656000313A3B /* CuteFont-Regular.ttf */; };
 		93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F3D264766A400313A3B /* CustomFontHandler.swift */; };
 		93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4026476C2E00313A3B /* DescriptionScreen.swift */; };
 		93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4226477C3500313A3B /* ImagePickScreen.swift */; };
 		93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4826477DDB00313A3B /* RoundButton.swift */; };
-		93A23F4C264786F900313A3B /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F4A264786F900313A3B /* Binggrae-Bold.ttf */; };
-		93A23F4D264786F900313A3B /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F4B264786F900313A3B /* Binggrae.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		93997A7426496507002A1E86 /* CuteFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CuteFont-Regular.ttf"; sourceTree = "<group>"; };
+		93997A762649651B002A1E86 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
+		93997A772649651B002A1E86 /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Binggrae-Bold.ttf"; sourceTree = "<group>"; };
 		93A23F2226475ED600313A3B /* DameDane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DameDane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A23F2526475ED600313A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A23F2726475ED600313A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,13 +34,10 @@
 		93A23F2E26475ED700313A3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		93A23F3126475ED700313A3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93A23F3326475ED700313A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93A23F3A2647656000313A3B /* CuteFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CuteFont-Regular.ttf"; path = "../../../../Downloads/Cute_Font/CuteFont-Regular.ttf"; sourceTree = "<group>"; };
 		93A23F3D264766A400313A3B /* CustomFontHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontHandler.swift; sourceTree = "<group>"; };
 		93A23F4026476C2E00313A3B /* DescriptionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionScreen.swift; sourceTree = "<group>"; };
 		93A23F4226477C3500313A3B /* ImagePickScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickScreen.swift; sourceTree = "<group>"; };
 		93A23F4826477DDB00313A3B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		93A23F4A264786F900313A3B /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Binggrae-Bold.ttf"; path = "../../../../Downloads/Binggrae-Bold.ttf"; sourceTree = "<group>"; };
-		93A23F4B264786F900313A3B /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Binggrae.ttf; path = ../../../../Downloads/Binggrae.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +96,9 @@
 		93A23F392647652D00313A3B /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				93A23F4A264786F900313A3B /* Binggrae-Bold.ttf */,
-				93A23F4B264786F900313A3B /* Binggrae.ttf */,
-				93A23F3A2647656000313A3B /* CuteFont-Regular.ttf */,
+				93997A772649651B002A1E86 /* Binggrae-Bold.ttf */,
+				93997A762649651B002A1E86 /* Binggrae.ttf */,
+				93997A7426496507002A1E86 /* CuteFont-Regular.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -202,11 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				93A23F3226475ED700313A3B /* LaunchScreen.storyboard in Resources */,
-				93A23F4D264786F900313A3B /* Binggrae.ttf in Resources */,
 				93A23F2F26475ED700313A3B /* Preview Assets.xcassets in Resources */,
-				93A23F4C264786F900313A3B /* Binggrae-Bold.ttf in Resources */,
+				93997A792649651B002A1E86 /* Binggrae-Bold.ttf in Resources */,
+				93997A782649651B002A1E86 /* Binggrae.ttf in Resources */,
 				93A23F2C26475ED700313A3B /* Assets.xcassets in Resources */,
-				93A23F3B2647656000313A3B /* CuteFont-Regular.ttf in Resources */,
+				93997A7526496507002A1E86 /* CuteFont-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
