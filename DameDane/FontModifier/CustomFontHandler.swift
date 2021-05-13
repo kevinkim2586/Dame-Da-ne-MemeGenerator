@@ -42,6 +42,8 @@ struct BinggraeModifier: ViewModifier {
             return .black
         case .caption1:
             return Color.black.opacity(0.8)
+        case .title3:
+            return Color("lightBlue")
         default:
             return .black
         }

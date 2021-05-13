@@ -23,7 +23,7 @@ struct DescriptionScreen: View {
                 Link(destination:urlToYouTube){
                     HStack{
                         Image(systemName: "paperplane").foregroundColor(Color("lightBlue")).imageScale(.large).padding(.init(top: 16, leading: 16, bottom: 16, trailing: 8))
-                        Text("유튜브 바로가기!").font(.title).foregroundColor(Color("lightBlue"))
+                        Text("유튜브 바로가기!").BinggraeFont(style: .title3, weight: .regular)
                         Spacer()
                     }
                 }
