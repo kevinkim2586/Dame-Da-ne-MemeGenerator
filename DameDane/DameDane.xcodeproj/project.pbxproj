@@ -20,6 +20,9 @@
 		93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4026476C2E00313A3B /* DescriptionScreen.swift */; };
 		93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4226477C3500313A3B /* ImagePickScreen.swift */; };
 		93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4826477DDB00313A3B /* RoundButton.swift */; };
+		93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C89C83265110F50076D44D /* NetworkInfo.swift */; };
+		93C89C8626511B950076D44D /* NetworkSettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C89C8526511B950076D44D /* NetworkSettingScreen.swift */; };
+		93C89C88265152AD0076D44D /* NetWorkInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C89C87265152AD0076D44D /* NetWorkInfoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		93A23F4026476C2E00313A3B /* DescriptionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionScreen.swift; sourceTree = "<group>"; };
 		93A23F4226477C3500313A3B /* ImagePickScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickScreen.swift; sourceTree = "<group>"; };
 		93A23F4826477DDB00313A3B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		93C89C83265110F50076D44D /* NetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfo.swift; sourceTree = "<group>"; };
+		93C89C8526511B950076D44D /* NetworkSettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettingScreen.swift; sourceTree = "<group>"; };
+		93C89C87265152AD0076D44D /* NetWorkInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkInfoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		93407D712652A0880027A505 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		93A23F1926475ED600313A3B = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +127,12 @@
 		93A23F3F26476C0600313A3B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				93407D712652A0880027A505 /* Alert */,
 				93A23F4726477DCE00313A3B /* Button */,
 				93A23F2926475ED600313A3B /* HomeScreen.swift */,
 				93A23F4026476C2E00313A3B /* DescriptionScreen.swift */,
 				93A23F4226477C3500313A3B /* ImagePickScreen.swift */,
+				93C89C8526511B950076D44D /* NetworkSettingScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +148,7 @@
 		93A23F4E2647897A00313A3B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				93C89C87265152AD0076D44D /* NetWorkInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -140,6 +156,7 @@
 		93A23F4F2647898200313A3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93C89C83265110F50076D44D /* NetworkInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,11 +236,14 @@
 			files = (
 				93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */,
 				93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */,
+				93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */,
 				93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */,
 				93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */,
 				93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */,
 				93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */,
 				93A23F2A26475ED600313A3B /* HomeScreen.swift in Sources */,
+				93C89C8626511B950076D44D /* NetworkSettingScreen.swift in Sources */,
+				93C89C88265152AD0076D44D /* NetWorkInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

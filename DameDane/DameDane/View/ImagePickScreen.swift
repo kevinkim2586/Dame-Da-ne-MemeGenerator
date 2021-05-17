@@ -50,7 +50,7 @@ struct ImagePickScreen: View {
              알맞은 해상도의 사진을 선택했을 시 변환 버튼을 활성화 시킨다
              사진을 담당하는 모델 구현 필요 및, 해상도 확인 함수 구현 필요
              */
-            if false {
+            if true {
                 GeometryReader{ geometry in
                     ZStack{
                     RoundButton(textToShow: Text("변환하기"))
