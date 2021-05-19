@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ImagePickScreen: View {
+    @State var isProgress:Bool = false
+    @State private var progress = 0.0
+    let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     var body: some View {
         VStack{
             HStack{
@@ -51,11 +54,25 @@ struct ImagePickScreen: View {
              사진을 담당하는 모델 구현 필요 및, 해상도 확인 함수 구현 필요
              */
             if true {
+                
                 GeometryReader{ geometry in
-                    ZStack{
-                    RoundButton(textToShow: Text("변환하기"))
-                        .frame(width:geometry.size.width*0.7,height:geometry.size.height*0.45)
-                    }.frame(width: geometry.size.width, height: geometry.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    if !isProgress{
+                        ZStack{
+                            Button(action:{isProgress.toggle()}){
+                                RoundButton(textToShow: Text("변환하기"))
+                                    .frame(width:geometry.size.width*0.7,height:geometry.size.height*0.45)
+                            }.frame(width: geometry.size.width, height: geometry.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        }
+                    }
+                    else {
+                        ProgressView("Downloading", value: progress)
+                            .onReceive(timer){
+                                _ in
+                                if progress < 100 {
+                                    progress += 0.02
+                                }
+                            }
+                    }
                 }
             }
         }

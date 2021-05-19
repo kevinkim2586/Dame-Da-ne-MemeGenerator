@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930080A02654AE59003A9C3F /* ConvertImageScreen.swift */; };
 		93997A7526496507002A1E86 /* CuteFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A7426496507002A1E86 /* CuteFont-Regular.ttf */; };
 		93997A782649651B002A1E86 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A762649651B002A1E86 /* Binggrae.ttf */; };
 		93997A792649651B002A1E86 /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A772649651B002A1E86 /* Binggrae-Bold.ttf */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930080A02654AE59003A9C3F /* ConvertImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertImageScreen.swift; sourceTree = "<group>"; };
 		93997A7426496507002A1E86 /* CuteFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CuteFont-Regular.ttf"; sourceTree = "<group>"; };
 		93997A762649651B002A1E86 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
 		93997A772649651B002A1E86 /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Binggrae-Bold.ttf"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				93A23F4026476C2E00313A3B /* DescriptionScreen.swift */,
 				93A23F4226477C3500313A3B /* ImagePickScreen.swift */,
 				93C89C8526511B950076D44D /* NetworkSettingScreen.swift */,
+				930080A02654AE59003A9C3F /* ConvertImageScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			files = (
 				93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */,
 				93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */,
+				930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */,
 				93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */,
 				93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */,
 				93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */,
