@@ -14,12 +14,12 @@ struct HomeScreen: View {
             GeometryReader{geometry in
                 VStack(alignment:.center){
                     
-                    Text("다메다네 밈 만들기!").BinggraeFont(style: .title1, weight: .bold)
+                    Text("다메다네 밈 만들기!").AutoSizeBinggraeFont(weight: .bold, textColor: .black, fontForWhat: .Title)
                     Spacer().frame(height:geometry.size.height*0.07)
                     Image("GuideImage").resizable().aspectRatio(contentMode: .fit)
                     Spacer()
                     //이미지 선택 화면으로 이동하는 NavigationLink
-                    NavigationLink(destination:ImagePickScreen()){
+                    NavigationLink(destination:ExecuteDeepFakeScreen()){
                         RoundButton(textToShow:Text("시작하기"))
                     }.frame(width:geometry.size.width*0.7,height: geometry.size.height*0.07)
                     

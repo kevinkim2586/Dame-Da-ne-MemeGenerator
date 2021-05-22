@@ -12,18 +12,20 @@ struct NetworkSettingScreen: View {
     @State var ipAddress = ""
     @State var portNumber = ""
     @State var showSaveAlert = false
+    @State var saveCompleteAlert = false // 
+    
     var body: some View {
         GeometryReader{ geometry in
             VStack{
                 
                 HStack{
-                    Text("현재 IP 주소: "+netWorkInfoViewModel.getIpAddress()).BinggraeFont(style: .body, weight: .bold).padding()
+                    Text("현재 IP 주소: "+netWorkInfoViewModel.getIpAddress()).AutoSizeBinggraeFont(weight: .bold, textColor: .black, fontForWhat: .Body).padding()
                     Spacer()
                 }
                 TextField("변경할 ip 주소를 입력해주세요", text: $ipAddress).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
                 
                 HStack{
-                    Text("현재 PORT 번호: " + netWorkInfoViewModel.getPortNumber()).BinggraeFont(style: .body, weight: .bold)
+                    Text("현재 PORT 번호: " + netWorkInfoViewModel.getPortNumber()).AutoSizeBinggraeFont(weight: .bold, textColor: .black, fontForWhat: .Body)
                     Spacer()
                 }.padding()
                 TextField("변경할 0 ~ 9999 사이의 포트 번호를 입력해주세요",text:$portNumber).textFieldStyle(RoundedBorderTextFieldStyle()).padding()
@@ -43,6 +45,7 @@ struct NetworkSettingScreen: View {
                                 if portNumber != "" {
                                     netWorkInfoViewModel.savePortToLocal(portNumber)
                                 }
+                                netWorkInfoViewModel.updateView()
                             }), secondaryButton: .cancel(Text("취소")))
                         })
                 }

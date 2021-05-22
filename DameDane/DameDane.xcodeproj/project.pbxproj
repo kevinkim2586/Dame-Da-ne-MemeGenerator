@@ -8,9 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930080A02654AE59003A9C3F /* ConvertImageScreen.swift */; };
+		934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B0265938F900CC3F15 /* NavigationExtension.swift */; };
+		934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B226593A1B00CC3F15 /* CustomBackButton.swift */; };
+		934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */; };
 		93997A7526496507002A1E86 /* CuteFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A7426496507002A1E86 /* CuteFont-Regular.ttf */; };
 		93997A782649651B002A1E86 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A762649651B002A1E86 /* Binggrae.ttf */; };
 		93997A792649651B002A1E86 /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A772649651B002A1E86 /* Binggrae-Bold.ttf */; };
+		939BD5A42658DD5100754199 /* DescriptionOfStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939BD5A32658DD5100754199 /* DescriptionOfStepView.swift */; };
+		939BD5A62658E49F00754199 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939BD5A52658E49F00754199 /* CircularProgressView.swift */; };
 		93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F2526475ED600313A3B /* AppDelegate.swift */; };
 		93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F2726475ED600313A3B /* SceneDelegate.swift */; };
 		93A23F2A26475ED600313A3B /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F2926475ED600313A3B /* HomeScreen.swift */; };
@@ -19,7 +24,7 @@
 		93A23F3226475ED700313A3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93A23F3026475ED700313A3B /* LaunchScreen.storyboard */; };
 		93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F3D264766A400313A3B /* CustomFontHandler.swift */; };
 		93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4026476C2E00313A3B /* DescriptionScreen.swift */; };
-		93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4226477C3500313A3B /* ImagePickScreen.swift */; };
+		93A23F4326477C3500313A3B /* ExecuteDeepFakeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4226477C3500313A3B /* ExecuteDeepFakeScreen.swift */; };
 		93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A23F4826477DDB00313A3B /* RoundButton.swift */; };
 		93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C89C83265110F50076D44D /* NetworkInfo.swift */; };
 		93C89C8626511B950076D44D /* NetworkSettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C89C8526511B950076D44D /* NetworkSettingScreen.swift */; };
@@ -28,9 +33,14 @@
 
 /* Begin PBXFileReference section */
 		930080A02654AE59003A9C3F /* ConvertImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertImageScreen.swift; sourceTree = "<group>"; };
+		934810B0265938F900CC3F15 /* NavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
+		934810B226593A1B00CC3F15 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
+		934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteConvertScreen.swift; sourceTree = "<group>"; };
 		93997A7426496507002A1E86 /* CuteFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CuteFont-Regular.ttf"; sourceTree = "<group>"; };
 		93997A762649651B002A1E86 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
 		93997A772649651B002A1E86 /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Binggrae-Bold.ttf"; sourceTree = "<group>"; };
+		939BD5A32658DD5100754199 /* DescriptionOfStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionOfStepView.swift; sourceTree = "<group>"; };
+		939BD5A52658E49F00754199 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		93A23F2226475ED600313A3B /* DameDane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DameDane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93A23F2526475ED600313A3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93A23F2726475ED600313A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +51,7 @@
 		93A23F3326475ED700313A3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A23F3D264766A400313A3B /* CustomFontHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFontHandler.swift; sourceTree = "<group>"; };
 		93A23F4026476C2E00313A3B /* DescriptionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionScreen.swift; sourceTree = "<group>"; };
-		93A23F4226477C3500313A3B /* ImagePickScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickScreen.swift; sourceTree = "<group>"; };
+		93A23F4226477C3500313A3B /* ExecuteDeepFakeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecuteDeepFakeScreen.swift; sourceTree = "<group>"; };
 		93A23F4826477DDB00313A3B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		93C89C83265110F50076D44D /* NetworkInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfo.swift; sourceTree = "<group>"; };
 		93C89C8526511B950076D44D /* NetworkSettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSettingScreen.swift; sourceTree = "<group>"; };
@@ -64,6 +74,14 @@
 			children = (
 			);
 			path = Alert;
+			sourceTree = "<group>";
+		};
+		934810AF265938E300CC3F15 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				934810B0265938F900CC3F15 /* NavigationExtension.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		93A23F1926475ED600313A3B = {
@@ -129,13 +147,17 @@
 		93A23F3F26476C0600313A3B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				934810AF265938E300CC3F15 /* Utilities */,
+				93E347E52657F80800A5322C /* ProgressView */,
 				93407D712652A0880027A505 /* Alert */,
 				93A23F4726477DCE00313A3B /* Button */,
 				93A23F2926475ED600313A3B /* HomeScreen.swift */,
 				93A23F4026476C2E00313A3B /* DescriptionScreen.swift */,
-				93A23F4226477C3500313A3B /* ImagePickScreen.swift */,
+				93A23F4226477C3500313A3B /* ExecuteDeepFakeScreen.swift */,
 				93C89C8526511B950076D44D /* NetworkSettingScreen.swift */,
 				930080A02654AE59003A9C3F /* ConvertImageScreen.swift */,
+				939BD5A32658DD5100754199 /* DescriptionOfStepView.swift */,
+				934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -144,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				93A23F4826477DDB00313A3B /* RoundButton.swift */,
+				934810B226593A1B00CC3F15 /* CustomBackButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -162,6 +185,14 @@
 				93C89C83265110F50076D44D /* NetworkInfo.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		93E347E52657F80800A5322C /* ProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				939BD5A52658E49F00754199 /* CircularProgressView.swift */,
+			);
+			path = ProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,16 +268,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A23F4326477C3500313A3B /* ImagePickScreen.swift in Sources */,
+				934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */,
+				93A23F4326477C3500313A3B /* ExecuteDeepFakeScreen.swift in Sources */,
 				93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */,
+				939BD5A42658DD5100754199 /* DescriptionOfStepView.swift in Sources */,
 				930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */,
 				93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */,
 				93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */,
+				934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */,
 				93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */,
 				93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */,
 				93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */,
+				934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */,
 				93A23F2A26475ED600313A3B /* HomeScreen.swift in Sources */,
 				93C89C8626511B950076D44D /* NetworkSettingScreen.swift in Sources */,
+				939BD5A62658E49F00754199 /* CircularProgressView.swift in Sources */,
 				93C89C88265152AD0076D44D /* NetWorkInfoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
