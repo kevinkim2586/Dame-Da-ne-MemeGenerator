@@ -10,9 +10,9 @@ import SwiftUI
 struct ConvertImageScreen: View {
     @Binding var isProgress:Bool
     @Binding var isComplete:Bool
-    
     @State var progressPercent = 0.0
     @State var showText:Bool = true
+    
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     let textAnimationTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -28,18 +28,19 @@ struct ConvertImageScreen: View {
                     progressPercent += 5
                 }
                 else if progressPercent >= 100 {
-                     isProgress.toggle()
-                    isComplete.toggle()
+                   
+                        isProgress.toggle()
+                        isComplete.toggle()
                 
                 }
             })
             Spacer()
             ZStack{
                 Text("1").AutoSizeBinggraeFont(weight: .medium, textColor: .white, fontForWhat: .Body)
-            if showText {
-                
-                Text("작업 중엔 홈 버튼을 누르지 마세요!").AutoSizeBinggraeFont(weight: .medium, textColor: .pink, fontForWhat: .Body)
-            }
+                if showText {
+                    
+                    Text("작업 중엔 홈 버튼을 누르지 마세요!").AutoSizeBinggraeFont(weight: .medium, textColor: .pink, fontForWhat: .Body)
+                }
             }.onReceive(textAnimationTimer, perform: { _ in
                 withAnimation{
                     self.showText.toggle()

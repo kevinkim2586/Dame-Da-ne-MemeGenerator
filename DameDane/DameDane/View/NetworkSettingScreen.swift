@@ -13,7 +13,8 @@ struct NetworkSettingScreen: View {
     @State var portNumber = ""
     @State var showSaveAlert = false
     @State var saveCompleteAlert = false // 
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         GeometryReader{ geometry in
             VStack{
@@ -53,7 +54,10 @@ struct NetworkSettingScreen: View {
                 Spacer().frame(height:geometry.size.height*0.15)
             }.frame(width: geometry.size.width, height: geometry.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-        }
+        }.navigationBarBackButtonHidden(true).navigationBarItems(leading: CustomBackButton(buttonAction: {
+            presentationMode.wrappedValue.dismiss()
+        }))
+        
     }
 }
 

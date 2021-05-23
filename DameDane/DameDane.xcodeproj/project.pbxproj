@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930080A02654AE59003A9C3F /* ConvertImageScreen.swift */; };
+		9301FB382659FC260056A2BE /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FB372659FC260056A2BE /* FloatingActionButton.swift */; };
 		934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B0265938F900CC3F15 /* NavigationExtension.swift */; };
 		934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B226593A1B00CC3F15 /* CustomBackButton.swift */; };
 		934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		930080A02654AE59003A9C3F /* ConvertImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertImageScreen.swift; sourceTree = "<group>"; };
+		9301FB372659FC260056A2BE /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
 		934810B0265938F900CC3F15 /* NavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
 		934810B226593A1B00CC3F15 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteConvertScreen.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				93A23F4826477DDB00313A3B /* RoundButton.swift */,
 				934810B226593A1B00CC3F15 /* CustomBackButton.swift */,
+				9301FB372659FC260056A2BE /* FloatingActionButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */,
 				93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */,
 				934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */,
+				9301FB382659FC260056A2BE /* FloatingActionButton.swift in Sources */,
 				93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */,
 				93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */,
 				93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */,

@@ -13,7 +13,7 @@ struct ExecuteDeepFakeScreen: View {
     @State var isProgress:Bool = false //변환 로딩 뷰 관련 상태 프로퍼티
     @State var isComplete:Bool = false //변환 완료 뷰 관련 상태 프로퍼티
     @State private var progress = 0.0
-    
+
     var body: some View {
         
         //변환 작업이 실행중이지 않을 경우 설명 화면을 보여준다.

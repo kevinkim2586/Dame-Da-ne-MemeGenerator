@@ -10,15 +10,16 @@ import SwiftUI
  Custom 네비게이션 백 버튼
  */
 struct CustomBackButton: View {
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
+    var buttonAction:()->()
 
     var body: some View {
-        Button(action:{
-            presentationMode.wrappedValue.dismiss()
-        }){
+        Button(action:
+           buttonAction
+        ){
             HStack{
                 Image(systemName: "arrow.backward").foregroundColor(Color("lightBlue")).imageScale(.large)
-                Text("뒤로가기").AutoSizeBinggraeFont(weight: .medium, textColor: Color("lightBlue"), fontForWhat: .Body)
+                Text("홈으로").AutoSizeBinggraeFont(weight: .medium, textColor: Color("lightBlue"), fontForWhat: .Body)
             }
         }
     }
@@ -26,6 +27,6 @@ struct CustomBackButton: View {
 
 struct CustomBackButton_Previews: PreviewProvider {
     static var previews: some View {
-        CustomBackButton()
+        CustomBackButton(buttonAction: {})
     }
 }

@@ -69,7 +69,9 @@ struct DescriptionOfStepView: View {
                     }
                 }
             }
-        }.navigationBarItems(leading: CustomBackButton(presentationMode: self._presentationMode ))
+        }.navigationBarItems(leading: CustomBackButton(buttonAction: {
+            presentationMode.wrappedValue.dismiss()
+        }))
     }
 }
 

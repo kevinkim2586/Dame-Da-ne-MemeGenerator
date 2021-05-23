@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DescriptionScreen: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         VStack{
             HStack{
@@ -37,7 +39,9 @@ struct DescriptionScreen: View {
             Text("흔히 Deep Fake 이라고 부르는 것은 AI 기술을 통해서 기존에 있던 영상의 인물의 모습을 제 3자의 것으로 치환하는 기술을 의미한다.").padding(.all,20).AutoSizeBinggraeFont(weight: .medium, textColor: .black, fontForWhat: .Body).foregroundColor(.black)
             Spacer()
             
-        }
+        }.navigationBarBackButtonHidden(true).navigationBarItems(leading: CustomBackButton(buttonAction: {
+            presentationMode.wrappedValue.dismiss()
+        }))
     }
 }
 
