@@ -12,6 +12,7 @@
 		934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B0265938F900CC3F15 /* NavigationExtension.swift */; };
 		934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B226593A1B00CC3F15 /* CustomBackButton.swift */; };
 		934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */; };
+		937F7221266B5D0400B494C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937F7220266B5D0400B494C5 /* ImagePicker.swift */; };
 		93997A7526496507002A1E86 /* CuteFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A7426496507002A1E86 /* CuteFont-Regular.ttf */; };
 		93997A782649651B002A1E86 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A762649651B002A1E86 /* Binggrae.ttf */; };
 		93997A792649651B002A1E86 /* Binggrae-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A772649651B002A1E86 /* Binggrae-Bold.ttf */; };
@@ -38,6 +39,7 @@
 		934810B0265938F900CC3F15 /* NavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
 		934810B226593A1B00CC3F15 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteConvertScreen.swift; sourceTree = "<group>"; };
+		937F7220266B5D0400B494C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		93997A7426496507002A1E86 /* CuteFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CuteFont-Regular.ttf"; sourceTree = "<group>"; };
 		93997A762649651B002A1E86 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
 		93997A772649651B002A1E86 /* Binggrae-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Binggrae-Bold.ttf"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				934810B0265938F900CC3F15 /* NavigationExtension.swift */,
+				937F7220266B5D0400B494C5 /* ImagePicker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */,
 				93A23F4326477C3500313A3B /* ExecuteDeepFakeScreen.swift in Sources */,
 				93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */,
+				937F7221266B5D0400B494C5 /* ImagePicker.swift in Sources */,
 				939BD5A42658DD5100754199 /* DescriptionOfStepView.swift in Sources */,
 				930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */,
 				93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */,

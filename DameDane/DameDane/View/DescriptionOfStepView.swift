@@ -11,7 +11,8 @@ struct DescriptionOfStepView: View {
     @Binding var isProgressConvert:Bool //버튼 클릭 시 변환 작업 뷰로 이동하기 위한 상태 프로퍼티
     @Binding var isComplete:Bool //변환 완료 뷰 관련 상태 프로퍼티
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
-
+    @State private var showingImagePicker = false
+    @State var pickedImage:Image?
     var body: some View {
         VStack{
             HStack{
@@ -37,7 +38,7 @@ struct DescriptionOfStepView: View {
                 Spacer()
             }.padding(.top,10)
             Button(action:{
-                imagePick()
+                self.showingImagePicker.toggle()
             }){
                 ZStack{
                     RoundedRectangle(cornerRadius: 0).strokeBorder(Color.gray,lineWidth: 1)
@@ -45,7 +46,16 @@ struct DescriptionOfStepView: View {
                     Image(systemName: "plus.circle")
                         .imageScale(.large)
                         .foregroundColor(Color("lightBlue"))
+                    if let pickedImage = pickedImage {
+                        pickedImage
+                    }
                 }.padding().padding(.top,20)
+            }.sheet(isPresented: $showingImagePicker) {
+                SUImagePicker(sourceType: .photoLibrary) { (image) in
+                    
+                    self.pickedImage = Image(uiImage: image)
+                    print(image)
+                }
             }
             Text("반드시 256 * 256 사이즈의 사진을 골라주세요!").AutoSizeBinggraeFont(weight: .medium, textColor: .black, fontForWhat: .Caption)
             Spacer()

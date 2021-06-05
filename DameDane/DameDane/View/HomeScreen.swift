@@ -13,7 +13,6 @@ struct HomeScreen: View {
         NavigationView{
             GeometryReader{geometry in
                 VStack(alignment:.center){
-                    
                     Text("다메다네 밈 만들기!").AutoSizeBinggraeFont(weight: .bold, textColor: .black, fontForWhat: .Title)
                     Spacer().frame(height:geometry.size.height*0.07)
                     Image("GuideImage").resizable().aspectRatio(contentMode: .fit)
