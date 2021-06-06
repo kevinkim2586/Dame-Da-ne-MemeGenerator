@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930080A02654AE59003A9C3F /* ConvertImageScreen.swift */; };
 		9301FB382659FC260056A2BE /* FloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9301FB372659FC260056A2BE /* FloatingActionButton.swift */; };
+		931C8F9C266C8ACA00D253C8 /* FileIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C8F9B266C8ACA00D253C8 /* FileIO.swift */; };
+		931C8F9E266C8AE400D253C8 /* fileHTTPIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C8F9D266C8AE400D253C8 /* fileHTTPIO.swift */; };
+		931C8FA0266CBAB900D253C8 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C8F9F266CBAB900D253C8 /* ImageManager.swift */; };
+		931C8FA2266CBB5900D253C8 /* ImageManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C8FA1266CBB5900D253C8 /* ImageManagerViewModel.swift */; };
+		931C8FA4266CF6C300D253C8 /* ErrorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931C8FA3266CF6C300D253C8 /* ErrorScreen.swift */; };
 		934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B0265938F900CC3F15 /* NavigationExtension.swift */; };
 		934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B226593A1B00CC3F15 /* CustomBackButton.swift */; };
 		934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */; };
@@ -36,6 +41,11 @@
 /* Begin PBXFileReference section */
 		930080A02654AE59003A9C3F /* ConvertImageScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertImageScreen.swift; sourceTree = "<group>"; };
 		9301FB372659FC260056A2BE /* FloatingActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingActionButton.swift; sourceTree = "<group>"; };
+		931C8F9B266C8ACA00D253C8 /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		931C8F9D266C8AE400D253C8 /* fileHTTPIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fileHTTPIO.swift; sourceTree = "<group>"; };
+		931C8F9F266CBAB900D253C8 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		931C8FA1266CBB5900D253C8 /* ImageManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManagerViewModel.swift; sourceTree = "<group>"; };
+		931C8FA3266CF6C300D253C8 /* ErrorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorScreen.swift; sourceTree = "<group>"; };
 		934810B0265938F900CC3F15 /* NavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
 		934810B226593A1B00CC3F15 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteConvertScreen.swift; sourceTree = "<group>"; };
@@ -73,6 +83,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		931C8FA5266CF6D000D253C8 /* ExecuteDeepFake */ = {
+			isa = PBXGroup;
+			children = (
+				93A23F4226477C3500313A3B /* ExecuteDeepFakeScreen.swift */,
+				930080A02654AE59003A9C3F /* ConvertImageScreen.swift */,
+				939BD5A32658DD5100754199 /* DescriptionOfStepView.swift */,
+				934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */,
+				931C8FA3266CF6C300D253C8 /* ErrorScreen.swift */,
+			);
+			path = ExecuteDeepFake;
+			sourceTree = "<group>";
+		};
 		93407D712652A0880027A505 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +107,8 @@
 			children = (
 				934810B0265938F900CC3F15 /* NavigationExtension.swift */,
 				937F7220266B5D0400B494C5 /* ImagePicker.swift */,
+				931C8F9B266C8ACA00D253C8 /* FileIO.swift */,
+				931C8F9D266C8AE400D253C8 /* fileHTTPIO.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -152,17 +176,14 @@
 		93A23F3F26476C0600313A3B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				931C8FA5266CF6D000D253C8 /* ExecuteDeepFake */,
 				934810AF265938E300CC3F15 /* Utilities */,
 				93E347E52657F80800A5322C /* ProgressView */,
 				93407D712652A0880027A505 /* Alert */,
 				93A23F4726477DCE00313A3B /* Button */,
 				93A23F2926475ED600313A3B /* HomeScreen.swift */,
 				93A23F4026476C2E00313A3B /* DescriptionScreen.swift */,
-				93A23F4226477C3500313A3B /* ExecuteDeepFakeScreen.swift */,
 				93C89C8526511B950076D44D /* NetworkSettingScreen.swift */,
-				930080A02654AE59003A9C3F /* ConvertImageScreen.swift */,
-				939BD5A32658DD5100754199 /* DescriptionOfStepView.swift */,
-				934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -181,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				93C89C87265152AD0076D44D /* NetWorkInfoViewModel.swift */,
+				931C8FA1266CBB5900D253C8 /* ImageManagerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				93C89C83265110F50076D44D /* NetworkInfo.swift */,
+				931C8F9F266CBAB900D253C8 /* ImageManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,15 +302,20 @@
 				93A23F2626475ED600313A3B /* AppDelegate.swift in Sources */,
 				937F7221266B5D0400B494C5 /* ImagePicker.swift in Sources */,
 				939BD5A42658DD5100754199 /* DescriptionOfStepView.swift in Sources */,
+				931C8F9C266C8ACA00D253C8 /* FileIO.swift in Sources */,
 				930080A12654AE59003A9C3F /* ConvertImageScreen.swift in Sources */,
 				93C89C84265110F50076D44D /* NetworkInfo.swift in Sources */,
 				93A23F4926477DDB00313A3B /* RoundButton.swift in Sources */,
+				931C8FA0266CBAB900D253C8 /* ImageManager.swift in Sources */,
 				934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */,
 				9301FB382659FC260056A2BE /* FloatingActionButton.swift in Sources */,
+				931C8FA2266CBB5900D253C8 /* ImageManagerViewModel.swift in Sources */,
 				93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */,
 				93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */,
+				931C8FA4266CF6C300D253C8 /* ErrorScreen.swift in Sources */,
 				93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */,
 				934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */,
+				931C8F9E266C8AE400D253C8 /* fileHTTPIO.swift in Sources */,
 				93A23F2A26475ED600313A3B /* HomeScreen.swift in Sources */,
 				93C89C8626511B950076D44D /* NetworkSettingScreen.swift in Sources */,
 				939BD5A62658E49F00754199 /* CircularProgressView.swift in Sources */,

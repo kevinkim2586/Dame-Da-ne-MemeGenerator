@@ -11,10 +11,10 @@ struct DescriptionOfStepView: View {
     @Binding var isProgressConvert:Bool //버튼 클릭 시 변환 작업 뷰로 이동하기 위한 상태 프로퍼티
     @Binding var isComplete:Bool //변환 완료 뷰 관련 상태 프로퍼티
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @ObservedObject var imageMangagerViewModel:ImageManagerViewModel
     @State private var showingImagePicker = false
-    @State var pickedImage:Image?
-    @State var isSizeFit:Bool = false
-    
+    @Binding var errorOccured:Bool
+    @Binding var isProgressComplete:Bool
     
     var body: some View {
         VStack{
@@ -49,23 +49,17 @@ struct DescriptionOfStepView: View {
                     Image(systemName: "plus.circle")
                         .imageScale(.large)
                         .foregroundColor(Color("lightBlue"))
-                    if let pickedImage = pickedImage {
-                            pickedImage.resizable().scaledToFit().frame(height:170,alignment: .center).cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                    if let pickedImage = imageMangagerViewModel.getCurrentImage() {
+                        Image(uiImage:pickedImage).resizable().scaledToFit().frame(height:170,alignment: .center).cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                     }
                 }.padding().padding(.top,20)
             }.sheet(isPresented: $showingImagePicker) {
                 SUImagePicker(sourceType: .photoLibrary) { (image) in
-                    self.pickedImage = Image(uiImage: image)
-                    if image.size.width == 256 && image.size.height == 256 {
-                        isSizeFit = true
-                    }
-                    else {
-                        isSizeFit = false
-                    }
+                    imageMangagerViewModel.setCurrentImage(image: image)
                 }
             }
             Text("반드시 256 * 256 사이즈의 사진을 골라주세요!").AutoSizeBinggraeFont(weight: .medium, textColor: .black, fontForWhat: .Caption)
-            if pickedImage != nil && !isSizeFit {
+            if imageMangagerViewModel.getCurrentImage() != nil && !imageMangagerViewModel.checkImageSize()  {
                 Text("사진을 다시 골라주세요!").AutoSizeBinggraeFont(weight: .regular, textColor: .red, fontForWhat: .Caption)
             }
             Spacer()
@@ -74,12 +68,46 @@ struct DescriptionOfStepView: View {
              알맞은 해상도의 사진을 선택했을 시 변환 버튼을 활성화 시킨다
              사진을 담당하는 모델 구현 필요 및, 해상도 확인 함수 구현 필요
              */
-            if pickedImage != nil && isSizeFit {
+            if imageMangagerViewModel.getCurrentImage() != nil && imageMangagerViewModel.checkImageSize() {
                 GeometryReader{ geometry in
                     ZStack{
                         Button(action:{
                             withAnimation{
-                                isProgressConvert.toggle()
+                                let oUrl: URL = URL(string: "http://\(NetWorkInfo.netWorkInfo.getIpAddress()):\(NetWorkInfo.netWorkInfo.getPortNumber())/upload")!
+                                do {
+                                    isProgressConvert.toggle()
+                                    try obfuscate(url: oUrl, accessToken: "",image: imageMangagerViewModel.getCurrentImage()!, completionHandler:
+                                                    { data, response, error in
+                                                        if let httpResponse = response as? HTTPURLResponse {
+                                                            let returnCode = httpResponse.statusCode
+                                                            if returnCode == 200 { // 성공
+                                                                print("200 OK")
+                                                                isProgressComplete.toggle()
+                                                                let manager = FileManager.default
+                                                                guard let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
+                                                                else { return }
+                                                                
+                                                                
+                                                                let newFolderDir = url.appendingPathComponent("test_dir")
+                                                                let fileURL = newFolderDir.appendingPathComponent("04.gif")
+                                                                
+                                                                
+                                                                manager.createFile(atPath: fileURL.path, contents: data, attributes: [:])
+                                                            } else {
+                                                                print("200 NO")
+                                                            }
+                                                        }
+                                                        else{
+                                                            
+                                                            errorOccured.toggle()
+                                                            isProgressConvert.toggle()
+                                                            
+                                                        }
+                                                    })
+                                } catch {
+                                    errorOccured.toggle()
+                                    isProgressConvert.toggle()
+                                }
                             }
                         }){
                             RoundButton(textToShow: Text("변환하기"))
@@ -98,6 +126,6 @@ struct DescriptionOfStepView: View {
 
 struct DescriptionOfStepView_Previews: PreviewProvider {
     static var previews: some View {
-        DescriptionOfStepView(isProgressConvert: .constant(false),isComplete: .constant(false))
+        DescriptionOfStepView(isProgressConvert: .constant(false),isComplete: .constant(false), imageMangagerViewModel: ImageManagerViewModel(),errorOccured:.constant(false),isProgressComplete: .constant(false))
     }
 }

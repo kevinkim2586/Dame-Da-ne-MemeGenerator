@@ -28,11 +28,10 @@ struct SUImagePicker: UIViewControllerRepresentable {
         
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
             
-            if let image = info[.originalImage] as? UIImage {
+            if let image = info[.originalImage] as? UIImage{
                 parent.imagePicked(image)
                 parent.presentationMode.wrappedValue.dismiss()
             }
-            
         }
         
         func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
@@ -59,8 +58,6 @@ struct SUImagePicker: UIViewControllerRepresentable {
         
     }
     
-    static func checkImageSize(image:Image){
-        
-    }
+    
 }
 

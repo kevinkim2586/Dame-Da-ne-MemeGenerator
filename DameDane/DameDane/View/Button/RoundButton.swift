@@ -10,11 +10,15 @@ import SwiftUI
 struct RoundButton<TextToShow:View>: View {
     let textToShow:TextToShow
     //Text를 넘겨 RoundButton을 생성할 수 있음
+    var color:Color = Color("lightBlue")
     var body: some View {
         ZStack{
-            RoundedRectangle(cornerRadius: 30).foregroundColor(Color("lightBlue"))
+            RoundedRectangle(cornerRadius: 30).foregroundColor(color)
             textToShow.AutoSizeBinggraeFont(weight: .medium, textColor: .white, fontForWhat: .Body)
         }
+    }
+    mutating func changeColor(color:Color){
+        self.color = color
     }
 }
 

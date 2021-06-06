@@ -12,7 +12,8 @@ struct ConvertImageScreen: View {
     @Binding var isComplete:Bool
     @State var progressPercent = 0.0
     @State var showText:Bool = true
-    
+    @Binding var isProgressComplete:Bool
+    @ObservedObject var imageManagerViewModel:ImageManagerViewModel
     let timer = Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()
     
     let textAnimationTimer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
@@ -22,16 +23,19 @@ struct ConvertImageScreen: View {
         VStack{
             Spacer()
             Text("변환 작업이 진행중입니다!").AutoSizeBinggraeFont(weight: .bold, textColor: .black, fontForWhat: .Title)
+            if let currentUiImage = imageManagerViewModel.getCurrentImage(){
+                Image(uiImage: currentUiImage)
+            }
             Spacer()
             ProgressView(value: progressPercent, total: 100.0).progressViewStyle(CustomProgressViewStyle()).frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).onReceive(timer, perform: { _ in
-                if progressPercent < 100 {
-                    progressPercent += 5
+                if progressPercent < 100 && !isProgressComplete{
+                    progressPercent += 0.1
                 }
-                else if progressPercent >= 100 {
-                   
-                        isProgress.toggle()
-                        isComplete.toggle()
-                
+                else if progressPercent<100 && isProgressComplete{
+                    progressPercent+=1
+                }
+                else if progressPercent>100 && isProgressComplete{
+                    isComplete.toggle()
                 }
             })
             Spacer()
@@ -53,6 +57,6 @@ struct ConvertImageScreen: View {
 
 struct ConvertImageScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ConvertImageScreen(isProgress: .constant(true), isComplete: .constant(true))
+        ConvertImageScreen(isProgress: .constant(true), isComplete: .constant(true), isProgressComplete: .constant(false), imageManagerViewModel: ImageManagerViewModel())
     }
 }
