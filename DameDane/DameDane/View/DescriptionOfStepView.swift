@@ -13,6 +13,9 @@ struct DescriptionOfStepView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var showingImagePicker = false
     @State var pickedImage:Image?
+    @State var isSizeFit:Bool = false
+    
+    
     var body: some View {
         VStack{
             HStack{
@@ -47,24 +50,31 @@ struct DescriptionOfStepView: View {
                         .imageScale(.large)
                         .foregroundColor(Color("lightBlue"))
                     if let pickedImage = pickedImage {
-                        pickedImage
+                            pickedImage.resizable().scaledToFit().frame(height:170,alignment: .center).cornerRadius(/*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                     }
                 }.padding().padding(.top,20)
             }.sheet(isPresented: $showingImagePicker) {
                 SUImagePicker(sourceType: .photoLibrary) { (image) in
-                    
                     self.pickedImage = Image(uiImage: image)
-                    print(image)
+                    if image.size.width == 256 && image.size.height == 256 {
+                        isSizeFit = true
+                    }
+                    else {
+                        isSizeFit = false
+                    }
                 }
             }
             Text("반드시 256 * 256 사이즈의 사진을 골라주세요!").AutoSizeBinggraeFont(weight: .medium, textColor: .black, fontForWhat: .Caption)
+            if pickedImage != nil && !isSizeFit {
+                Text("사진을 다시 골라주세요!").AutoSizeBinggraeFont(weight: .regular, textColor: .red, fontForWhat: .Caption)
+            }
             Spacer()
             
             /**
              알맞은 해상도의 사진을 선택했을 시 변환 버튼을 활성화 시킨다
              사진을 담당하는 모델 구현 필요 및, 해상도 확인 함수 구현 필요
              */
-            if true {
+            if pickedImage != nil && isSizeFit {
                 GeometryReader{ geometry in
                     ZStack{
                         Button(action:{
@@ -73,7 +83,7 @@ struct DescriptionOfStepView: View {
                             }
                         }){
                             RoundButton(textToShow: Text("변환하기"))
-                                .frame(width:geometry.size.width*0.7,height:geometry.size.height*0.45)
+                                .frame(width:geometry.size.width*0.7,height:geometry.size.height*0.35)
                         }.frame(width: geometry.size.width, height: geometry.size.height, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         
                     }

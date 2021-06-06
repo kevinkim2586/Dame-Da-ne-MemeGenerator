@@ -59,5 +59,8 @@ struct SUImagePicker: UIViewControllerRepresentable {
         
     }
     
+    static func checkImageSize(image:Image){
+        
+    }
 }
 
