@@ -19,10 +19,10 @@ func obfuscate(url: URL, accessToken: String,image:UIImage, completionHandler: @
     guard let filedata = image.pngData() else {
         return
     }
-    let headerLines = ["--\(boundary)",
-        "Content-Disposition: form-data; name=\"file\"; filename=\"\("")\"",
-        "Content-Type: application/octet-stream",
-        "\r\n"]
+    let headerLines = ["—\(boundary)",
+                           "Content-Disposition: form-data; name=\"file\"; filename=\"\(url.lastPathComponent)\"",
+                           "Content-Type: application/octet-stream",
+                           "\r\n"]
     var data = headerLines.joined(separator:"\r\n").data(using:.utf8)!
     // 그 다음에 파일 데이터를 붙이고
     data.append(contentsOf: filedata)

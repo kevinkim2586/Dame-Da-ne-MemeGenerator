@@ -26,4 +26,5 @@ struct ImageManager {
             return false
         }
     }
+
 }

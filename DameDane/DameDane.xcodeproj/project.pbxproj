@@ -17,6 +17,7 @@
 		934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B0265938F900CC3F15 /* NavigationExtension.swift */; };
 		934810B326593A1B00CC3F15 /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B226593A1B00CC3F15 /* CustomBackButton.swift */; };
 		934810B526593BB000CC3F15 /* CompleteConvertScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */; };
+		9351D55E267A443600D19197 /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351D55D267A443600D19197 /* GifLoader.swift */; };
 		937F7221266B5D0400B494C5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937F7220266B5D0400B494C5 /* ImagePicker.swift */; };
 		93997A7526496507002A1E86 /* CuteFont-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A7426496507002A1E86 /* CuteFont-Regular.ttf */; };
 		93997A782649651B002A1E86 /* Binggrae.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93997A762649651B002A1E86 /* Binggrae.ttf */; };
@@ -49,6 +50,7 @@
 		934810B0265938F900CC3F15 /* NavigationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationExtension.swift; sourceTree = "<group>"; };
 		934810B226593A1B00CC3F15 /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 		934810B426593BB000CC3F15 /* CompleteConvertScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompleteConvertScreen.swift; sourceTree = "<group>"; };
+		9351D55D267A443600D19197 /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
 		937F7220266B5D0400B494C5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		93997A7426496507002A1E86 /* CuteFont-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CuteFont-Regular.ttf"; sourceTree = "<group>"; };
 		93997A762649651B002A1E86 /* Binggrae.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Binggrae.ttf; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				937F7220266B5D0400B494C5 /* ImagePicker.swift */,
 				931C8F9B266C8ACA00D253C8 /* FileIO.swift */,
 				931C8F9D266C8AE400D253C8 /* fileHTTPIO.swift */,
+				9351D55D267A443600D19197 /* GifLoader.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				931C8FA2266CBB5900D253C8 /* ImageManagerViewModel.swift in Sources */,
 				93A23F2826475ED600313A3B /* SceneDelegate.swift in Sources */,
 				93A23F4126476C2E00313A3B /* DescriptionScreen.swift in Sources */,
+				9351D55E267A443600D19197 /* GifLoader.swift in Sources */,
 				931C8FA4266CF6C300D253C8 /* ErrorScreen.swift in Sources */,
 				93A23F3E264766A400313A3B /* CustomFontHandler.swift in Sources */,
 				934810B1265938F900CC3F15 /* NavigationExtension.swift in Sources */,

@@ -87,11 +87,12 @@ struct DescriptionOfStepView: View {
                                                                 guard let url = manager.urls(for: .documentDirectory, in: .userDomainMask).first
                                                                 else { return }
                                                                 
+                                                                let imageGif = UIImage.gifImageWithData(data!)
                                                                 
                                                                 let newFolderDir = url.appendingPathComponent("test_dir")
                                                                 let fileURL = newFolderDir.appendingPathComponent("04.gif")
                                                                 
-                                                                
+                                                                let image = 
                                                                 manager.createFile(atPath: fileURL.path, contents: data, attributes: [:])
                                                             } else {
                                                                 print("200 NO")
