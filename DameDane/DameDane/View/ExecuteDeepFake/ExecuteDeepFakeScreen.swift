@@ -31,7 +31,7 @@ struct ExecuteDeepFakeScreen: View {
         }
         //변환 작업이 완료된 경우 완료 화면을 보여준다
         else {
-            CompleteConvertScreen().navigationBarBackButtonHidden(true)
+            CompleteConvertScreen(imageManagerViewModel: imageManagerViewModel).navigationBarBackButtonHidden(true)
         }
         
      }

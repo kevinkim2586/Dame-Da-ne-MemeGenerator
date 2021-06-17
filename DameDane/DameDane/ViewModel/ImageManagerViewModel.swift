@@ -22,4 +22,12 @@ class ImageManagerViewModel:ObservableObject {
     func getCurrentImage() -> UIImage?{
         return imageManager.image
     }
+    
+    func setResultImage(image:UIImage){
+        imageManager.resultImage = image
+    }
+    
+    func getResultImage()->UIImage?{
+        return imageManager.resultImage
+    }
 }

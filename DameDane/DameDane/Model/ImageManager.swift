@@ -9,12 +9,23 @@ import Foundation
 import SwiftUI
 struct ImageManager {
      private var _image:UIImage?
+     private var _resultImage:UIImage?
+    
      var image:UIImage? {
         get {
             return _image
         }
         set(value) {
             _image = value
+        }
+    }
+    
+    var resultImage:UIImage? {
+        get{
+            return _resultImage
+        }
+        set(value){
+            _resultImage = value
         }
     }
     
